@@ -17,7 +17,7 @@
 """Setup script."""
 
 from setuptools import setup, find_packages
-import textfsm
+import textfsmplus
 # To use a consistent encoding
 from codecs import open
 from os import path
@@ -28,14 +28,14 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'README.md'), encoding="utf8") as f:
     long_description = f.read()
 
-setup(name='textfsm',
-      maintainer='Google',
-      maintainer_email='textfsm-dev@googlegroups.com',
-      version=textfsm.__version__,
-      description='Python module for parsing semi-structured text into python tables.',
+setup(name='textfsmplus',
+      maintainer='Wilhelm Putz',
+      maintainer_email='wp@aci.guru',
+      version=textfsmplus.__version__,
+      description='Enhanced python module for parsing semi-structured text into python tables.',
       long_description=long_description,
       long_description_content_type='text/markdown',
-      url='https://github.com/google/textfsm',
+      url='https://github.com/jinjamator/textfsmplus',
       license='Apache License, Version 2.0',
       classifiers=[
           'Development Status :: 5 - Production/Stable',
@@ -45,13 +45,13 @@ setup(name='textfsm',
           'Programming Language :: Python :: 2',
           'Programming Language :: Python :: 3',
           'Topic :: Software Development :: Libraries'],
-      packages=['textfsm'],
+      packages=['textfsmplus'],
       entry_points={
         'console_scripts': [
-            'textfsm=textfsm.parser:main'
+            'textfsm=textfsmplus.parser:main'
         ]
       },      
       include_package_data=True,
-      package_data={'textfsm': ['../testdata/*']},
+      package_data={'textfsmplus': ['../testdata/*']},
       install_requires=['six', 'future', 'regex'],
      )

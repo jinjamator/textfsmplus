@@ -27,7 +27,7 @@ from builtins import object
 import sys
 import unittest
 
-from textfsm import terminal
+from textfsmplus import terminal
 
 
 class TerminalTest(unittest.TestCase):

@@ -24,8 +24,8 @@ from __future__ import unicode_literals
 from builtins import range
 import unittest
 from io import StringIO
-from textfsm import terminal
-from textfsm import texttable
+from textfsmplus import terminal
+from textfsmplus import texttable
 
 
 def cmp(a, b):

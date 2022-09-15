@@ -35,10 +35,10 @@ import re
 import threading
 from builtins import object    # pylint: disable=redefined-builtin
 from builtins import str       # pylint: disable=redefined-builtin
-import textfsm
+import textfsmplus
 
-from textfsm import copyable_regex_object
-from textfsm import texttable
+from textfsmplus import copyable_regex_object
+from textfsmplus import texttable
 
 
 class Error(Exception):
@@ -303,7 +303,7 @@ class CliTable(texttable.TextTable):
       CliTableError: A template was not found for the given command.
     """
     # Build FSM machine from the template.
-    fsm = textfsm.TextFSM(template_file)
+    fsm = textfsmplus.TextFSM(template_file)
     if not self._keys:
       self._keys = set(fsm.GetValuesByAttrib('Key'))
 

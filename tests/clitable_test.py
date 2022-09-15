@@ -27,8 +27,8 @@ import re
 import unittest
 
 from io import StringIO
-from textfsm import clitable
-from textfsm import copyable_regex_object
+from textfsmplus import clitable
+from textfsmplus import copyable_regex_object
 
 
 class UnitTestIndexTable(unittest.TestCase):

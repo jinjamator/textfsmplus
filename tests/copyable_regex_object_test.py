@@ -24,7 +24,7 @@ from __future__ import unicode_literals
 import copy
 import unittest
 
-from textfsm import copyable_regex_object
+from textfsmplus import copyable_regex_object
 
 
 class CopyableRegexObjectTest(unittest.TestCase):

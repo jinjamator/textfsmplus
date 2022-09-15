@@ -24,8 +24,8 @@ from __future__ import unicode_literals
 from builtins import str
 import unittest
 from io import StringIO
-import textfsm
-from textfsm.parser import TextFSMTemplateError
+import textfsmplus as textfsm
+from textfsmplus.parser import TextFSMTemplateError
 try:
   import regex as regexModule
   useRegex = True
