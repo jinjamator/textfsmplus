@@ -161,6 +161,7 @@ class TextFSMOptions(object):
     def OnClearAllVar(self):
       self.value.value = []
 
+
   class Required(OptionBase):
     """The Value must be non-empty for the row to be recorded."""
 
@@ -239,7 +240,7 @@ class TextFSMOptions(object):
         self._value.append(match.groupdict())
       else:
         if "Repeated" in self.value.OptionNames():
-          self._value.append(self.value.values_list)
+          self._value+=self.value.values_list
         else:
           self._value.append(self.value.value)
 
@@ -252,6 +253,7 @@ class TextFSMOptions(object):
 
     def OnSaveRecord(self):
       self.value.value = list(self._value)
+
 
 
 class TextFSMValue(object):
