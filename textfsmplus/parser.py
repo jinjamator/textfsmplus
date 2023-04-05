@@ -39,7 +39,7 @@ from builtins import object   # pylint: disable=redefined-builtin
 from builtins import str      # pylint: disable=redefined-builtin
 from builtins import zip      # pylint: disable=redefined-builtin
 import warnings
-warnings.simplefilter("always")
+
 try:
   import regex as regexModule
   useRegex = True
@@ -47,7 +47,6 @@ except ImportError:
   import re as regexModule
   warnings.warn("Could not locate regex module. Defaulting to re. Repeated keyword disabled.", ImportWarning)
   useRegex = False
-
 
 class Error(Exception):
   """Base class for errors."""
