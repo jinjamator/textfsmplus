@@ -10,4 +10,4 @@ for each input entity.
 """
 from textfsmplus.parser import *
 
-__version__ = '0.2'
+__version__ = '0.2.1'
