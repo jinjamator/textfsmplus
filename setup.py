@@ -37,6 +37,7 @@ setup(name='textfsmplus',
       long_description_content_type='text/markdown',
       url='https://github.com/jinjamator/textfsmplus',
       license='Apache License, Version 2.0',
+      author='Wilhelm Putz',
       classifiers=[
           'Development Status :: 5 - Production/Stable',
           'Intended Audience :: Developers',
